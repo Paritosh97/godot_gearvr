@@ -15,7 +15,7 @@ target = ARGUMENTS.get("target", "release")
 # this really only is supported on android...
 #platform = ARGUMENTS.get("platform", "android")
 
-# This makes sure to keep the session environment variables on windows, 
+# This makes sure to keep the session environment variables on windows,
 # that way you can run scons in a vs 2017 prompt and it will find all the required tools
 #env = Environment()
 
@@ -32,11 +32,6 @@ def add_sources(sources, directory):
             sources.append(directory + '/' + file)
         elif file.endswith('.cpp'):
             sources.append(directory + '/' + file)
-"""
-# Not proud of it
-cmd = 'ndk-build' + ' NDK_LIBS_OUT=./demo/bin'
-os.system(cmd)
-"""
 
 # have to figure out what to do here....
 #if platform == "android":
