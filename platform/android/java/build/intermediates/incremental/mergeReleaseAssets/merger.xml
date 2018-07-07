@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/paritosh97/Desktop/Godot/godot/platform/android/java/assets"/><source path="/home/paritosh97/Desktop/Godot/godot/platform/android/java/build/generated/assets/shaders/release"/></dataSet><dataSet config="release"><source path="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/release/assets"/></dataSet></merger>

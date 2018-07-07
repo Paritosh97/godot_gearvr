@@ -1,0 +1,235 @@
+[
+    {
+        "outputFile": "/home/paritosh97/Desktop/Godot/godot/platform/android/java/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-fa/values-fa.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 75,
+                    "endOffset": 126
+                },
+                "from": {
+                    "file": "/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-fa/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 75,
+                        "endOffset": 126
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 131,
+                    "endColumn": 53,
+                    "endOffset": 180
+                },
+                "from": {
+                    "file": "/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-fa/strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 991,
+                        "endColumn": 53,
+                        "endOffset": 1040
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 185,
+                    "endColumn": 73,
+                    "endOffset": 254
+                },
+                "from": {
+                    "file": "/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-fa/strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1045,
+                        "endColumn": 73,
+                        "endOffset": 1114
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 259,
+                    "endColumn": 57,
+                    "endOffset": 312
+                },
+                "from": {
+                    "file": "/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-fa/strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 873,
+                        "endColumn": 57,
+                        "endOffset": 926
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 317,
+                    "endColumn": 59,
+                    "endOffset": 372
+                },
+                "from": {
+                    "file": "/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-fa/strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 931,
+                        "endColumn": 59,
+                        "endOffset": 986
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 377,
+                    "endColumn": 68,
+                    "endOffset": 441
+                },
+                "from": {
+                    "file": "/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-fa/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 482,
+                        "endColumn": 68,
+                        "endOffset": 546
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 446,
+                    "endColumn": 69,
+                    "endOffset": 511
+                },
+                "from": {
+                    "file": "/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-fa/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 551,
+                        "endColumn": 69,
+                        "endOffset": 616
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 516,
+                    "endColumn": 177,
+                    "endOffset": 689
+                },
+                "from": {
+                    "file": "/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-fa/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 131,
+                        "endColumn": 177,
+                        "endOffset": 304
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 694,
+                    "endColumn": 172,
+                    "endOffset": 862
+                },
+                "from": {
+                    "file": "/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-fa/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 309,
+                        "endColumn": 172,
+                        "endOffset": 477
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 867,
+                    "endColumn": 101,
+                    "endOffset": 964
+                },
+                "from": {
+                    "file": "/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-fa/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 692,
+                        "endColumn": 101,
+                        "endOffset": 789
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 969,
+                    "endColumn": 78,
+                    "endOffset": 1043
+                },
+                "from": {
+                    "file": "/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-fa/strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 794,
+                        "endColumn": 78,
+                        "endOffset": 868
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1048,
+                    "endColumn": 70,
+                    "endOffset": 1114
+                },
+                "from": {
+                    "file": "/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-fa/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 621,
+                        "endColumn": 70,
+                        "endOffset": 687
+                    }
+                }
+            }
+        ]
+    }
+]

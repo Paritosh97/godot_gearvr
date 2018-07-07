@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/paritosh97/Desktop/Godot/godot/platform/android/java/build/intermediates/res/merged/debug/layout/downloading_expansion.xml",
+        "source": "/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+    },
+    {
+        "merged": "/home/paritosh97/Desktop/Godot/godot/platform/android/java/build/intermediates/res/merged/debug/layout/status_bar_ongoing_event_progress_bar.xml",
+        "source": "/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/status_bar_ongoing_event_progress_bar.xml"
+    }
+]

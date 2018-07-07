@@ -1,0 +1,1622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 2.3.3">
+
+    <issue
+        id="MissingPermission"
+        severity="Error"
+        message="Missing permissions required by ConnectivityManager.getActiveNetworkInfo: android.permission.ACCESS_NETWORK_STATE"
+        category="Correctness"
+        priority="9"
+        summary="Missing Permissions"
+        explanation="This check scans through your code and libraries and looks at the APIs being used, and checks this against the set of permissions required to access those APIs. If the code using those APIs is called at runtime, then the program will crash.&#xA;&#xA;Furthermore, for permissions that are revocable (with targetSdkVersion 23), client code must also be prepared to handle the calls throwing an exception if the user rejects the request for permission at runtime."
+        errorLine1="            NetworkInfo activeInfo = mConnectivityManager"
+        errorLine2="                                     ^"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/com/google/android/vending/expansion/downloader/impl/DownloaderService.java"
+            line="581"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="MissingPermission"
+        severity="Error"
+        message="Missing permissions required by ConnectivityManager.getActiveNetworkInfo: android.permission.ACCESS_NETWORK_STATE"
+        category="Correctness"
+        priority="9"
+        summary="Missing Permissions"
+        explanation="This check scans through your code and libraries and looks at the APIs being used, and checks this against the set of permissions required to access those APIs. If the code using those APIs is called at runtime, then the program will crash.&#xA;&#xA;Furthermore, for permissions that are revocable (with targetSdkVersion 23), client code must also be prepared to handle the calls throwing an exception if the user rejects the request for permission at runtime."
+        errorLine1="        NetworkInfo activeInfo = connectivity.getActiveNetworkInfo();"
+        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/com/google/android/vending/expansion/downloader/SystemFacade.java"
+            line="54"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="MissingPermission"
+        severity="Error"
+        message="Missing permissions required by ConnectivityManager.getActiveNetworkInfo: android.permission.ACCESS_NETWORK_STATE"
+        category="Correctness"
+        priority="9"
+        summary="Missing Permissions"
+        explanation="This check scans through your code and libraries and looks at the APIs being used, and checks this against the set of permissions required to access those APIs. If the code using those APIs is called at runtime, then the program will crash.&#xA;&#xA;Furthermore, for permissions that are revocable (with targetSdkVersion 23), client code must also be prepared to handle the calls throwing an exception if the user rejects the request for permission at runtime."
+        errorLine1="        NetworkInfo info = connectivity.getActiveNetworkInfo();"
+        errorLine2="                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/com/google/android/vending/expansion/downloader/SystemFacade.java"
+            line="72"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="SuspiciousImport"
+        severity="Warning"
+        message="Don&apos;t include `android.R` here; use a fully qualified name for each usage instead"
+        category="Correctness"
+        priority="9"
+        summary="&apos;`import android.R`&apos; statement"
+        explanation="Importing `android.R` is usually not intentional; it sometimes happens when you use an IDE and ask it to automatically add imports at a time when your project&apos;s R class it not present.&#xA;&#xA;Once the import is there you might get a lot of &quot;confusing&quot; error messages because of course the fields available on `android.R` are not the ones you&apos;d expect from just looking at your own `R` class."
+        errorLine1="import android.R;"
+        errorLine2="~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/Godot.java"
+            line="33"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="ApplySharedPref"
+        severity="Warning"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        category="Correctness"
+        priority="6"
+        summary="Use `apply()` on `SharedPreferences`"
+        explanation="Consider using `apply()` instead of `commit` on shared preferences. Whereas `commit` blocks and writes its data to persistent storage immediately, `apply` will handle it in the background."
+        errorLine1="     editor.commit();"
+        errorLine2="     ~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/Godot.java"
+            line="483"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="ApplySharedPref"
+        severity="Warning"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        category="Correctness"
+        priority="6"
+        summary="Use `apply()` on `SharedPreferences`"
+        explanation="Consider using `apply()` instead of `commit` on shared preferences. Whereas `commit` blocks and writes its data to persistent storage immediately, `apply` will handle it in the background."
+        errorLine1="  editor.commit();"
+        errorLine2="  ~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/utils/HttpRequester.java"
+            line="203"
+            column="3"/>
+    </issue>
+
+    <issue
+        id="ApplySharedPref"
+        severity="Warning"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        category="Correctness"
+        priority="6"
+        summary="Use `apply()` on `SharedPreferences`"
+        explanation="Consider using `apply()` instead of `commit` on shared preferences. Whereas `commit` blocks and writes its data to persistent storage immediately, `apply` will handle it in the background."
+        errorLine1="  editor.commit();"
+        errorLine2="  ~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/payments/PaymentsCache.java"
+            line="49"
+            column="3"/>
+    </issue>
+
+    <issue
+        id="ApplySharedPref"
+        severity="Warning"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        category="Correctness"
+        priority="6"
+        summary="Use `apply()` on `SharedPreferences`"
+        explanation="Consider using `apply()` instead of `commit` on shared preferences. Whereas `commit` blocks and writes its data to persistent storage immediately, `apply` will handle it in the background."
+        errorLine1="  editor.commit();"
+        errorLine2="  ~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/payments/PaymentsCache.java"
+            line="63"
+            column="3"/>
+    </issue>
+
+    <issue
+        id="Assert"
+        severity="Warning"
+        message="Assertions are unreliable. Use `BuildConfig.DEBUG` conditional checks instead."
+        category="Correctness"
+        priority="6"
+        summary="Assertions"
+        explanation="Assertions are not checked at runtime. There are ways to request that they be used by Dalvik (`adb shell setprop debug.assert 1`), but the property is ignored in many places and can not be relied upon. Instead, perform conditional checking inside `if (BuildConfig.DEBUG) { }` blocks. That constant is a static final boolean which is true in debug builds and false in release builds, and the Java compiler completely removes all code inside the if-body from the app.&#xA;&#xA;For example, you can replace `assert speed > 0` with `if (BuildConfig.DEBUG &amp;&amp; !(speed > 0)) { throw new AssertionError() }`.&#xA;&#xA;(Note: This lint check does not flag assertions purely asserting nullness or non-nullness; these are typically more intended for tools usage than runtime checks.)"
+        url="https://code.google.com/p/android/issues/detail?id=65183"
+        urls="https://code.google.com/p/android/issues/detail?id=65183"
+        errorLine1="    assert (e == outBuff.length);"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/com/android/vending/licensing/util/Base64.java"
+            line="344"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="CommitPrefEdits"
+        severity="Warning"
+        message="`SharedPreferences.edit()` without a corresponding `commit()` or `apply()` call"
+        category="Correctness"
+        priority="6"
+        summary="Missing `commit()` on `SharedPreference` editor"
+        explanation="After calling `edit()` on a `SharedPreference`, you must call `commit()` or `apply()` on the editor to save the results."
+        errorLine1="            mEditor = mPreferences.edit();"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/com/android/vending/licensing/PreferenceObfuscator.java"
+            line="47"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        severity="Warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        category="Correctness"
+        priority="6"
+        summary="Implied default locale in case conversion"
+        explanation="Calling `String#toLowerCase()` or `#toUpperCase()` *without specifying an explicit locale* is a common source of bugs. The reason for that is that those methods will use the current locale on the user&apos;s device, and even though the code appears to work correctly when you are developing the app, it will fail in some locales. For example, in the Turkish locale, the uppercase replacement for `i` is *not* `I`.&#xA;&#xA;If you want the methods to just perform ASCII replacement, for example to convert an enum name, call `String#toUpperCase(Locale.US)` instead. If you really want to use the current locale, call `String#toUpperCase(Locale.getDefault())` instead."
+        url="http://developer.android.com/reference/java/util/Locale.html#default_locale"
+        urls="http://developer.android.com/reference/java/util/Locale.html#default_locale"
+        errorLine1="        return String.format(&quot;%.2f&quot;,"
+        errorLine2="               ^">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/com/google/android/vending/expansion/downloader/Helpers.java"
+            line="149"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        severity="Warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        category="Correctness"
+        priority="6"
+        summary="Implied default locale in case conversion"
+        explanation="Calling `String#toLowerCase()` or `#toUpperCase()` *without specifying an explicit locale* is a common source of bugs. The reason for that is that those methods will use the current locale on the user&apos;s device, and even though the code appears to work correctly when you are developing the app, it will fail in some locales. For example, in the Turkish locale, the uppercase replacement for `i` is *not* `I`.&#xA;&#xA;If you want the methods to just perform ASCII replacement, for example to convert an enum name, call `String#toUpperCase(Locale.US)` instead. If you really want to use the current locale, call `String#toUpperCase(Locale.getDefault())` instead."
+        url="http://developer.android.com/reference/java/util/Locale.html#default_locale"
+        urls="http://developer.android.com/reference/java/util/Locale.html#default_locale"
+        errorLine1="                String.format(&quot;%.2f&quot;, (float) overallTotal /"
+        errorLine2="                ^">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/com/google/android/vending/expansion/downloader/Helpers.java"
+            line="152"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        severity="Warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        category="Correctness"
+        priority="6"
+        summary="Implied default locale in case conversion"
+        explanation="Calling `String#toLowerCase()` or `#toUpperCase()` *without specifying an explicit locale* is a common source of bugs. The reason for that is that those methods will use the current locale on the user&apos;s device, and even though the code appears to work correctly when you are developing the app, it will fail in some locales. For example, in the Turkish locale, the uppercase replacement for `i` is *not* `I`.&#xA;&#xA;If you want the methods to just perform ASCII replacement, for example to convert an enum name, call `String#toUpperCase(Locale.US)` instead. If you really want to use the current locale, call `String#toUpperCase(Locale.getDefault())` instead."
+        url="http://developer.android.com/reference/java/util/Locale.html#default_locale"
+        urls="http://developer.android.com/reference/java/util/Locale.html#default_locale"
+        errorLine1="        return String.format(&quot;%.2f&quot;, bytesPerMillisecond * 1000 / 1024);"
+        errorLine2="               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/com/google/android/vending/expansion/downloader/Helpers.java"
+            line="186"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="InlinedApi"
+        severity="Warning"
+        message="Field requires API level 19 (current min is 18): `android.view.View#SYSTEM_UI_FLAG_IMMERSIVE_STICKY`"
+        category="Correctness"
+        priority="6"
+        summary="Using inlined constants on older versions"
+        explanation="This check scans through all the Android API field references in the application and flags certain constants, such as static final integers and Strings, which were introduced in later versions. These will actually be copied into the class files rather than being referenced, which means that the value is available even when running on older devices. In some cases that&apos;s fine, and in other cases it can result in a runtime crash or incorrect behavior. It depends on the context, so consider the code carefully and device whether it&apos;s safe and can be suppressed or whether the code needs tbe guarded.&#xA;&#xA;If you really want to use this API and don&apos;t need to support older devices just set the `minSdkVersion` in your `build.gradle` or `AndroidManifest.xml` files.&#xA;If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the `@TargetApi` annotation specifying the local minimum SDK to apply, such as `@TargetApi(11)`, such that this check considers 11 rather than your manifest file&apos;s minimum SDK as the required API level.&#xA;"
+        errorLine1="        View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/Godot.java"
+            line="468"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InlinedApi"
+        severity="Warning"
+        message="Field requires API level 19 (current min is 18): `android.view.View#SYSTEM_UI_FLAG_IMMERSIVE_STICKY`"
+        category="Correctness"
+        priority="6"
+        summary="Using inlined constants on older versions"
+        explanation="This check scans through all the Android API field references in the application and flags certain constants, such as static final integers and Strings, which were introduced in later versions. These will actually be copied into the class files rather than being referenced, which means that the value is available even when running on older devices. In some cases that&apos;s fine, and in other cases it can result in a runtime crash or incorrect behavior. It depends on the context, so consider the code carefully and device whether it&apos;s safe and can be suppressed or whether the code needs tbe guarded.&#xA;&#xA;If you really want to use this API and don&apos;t need to support older devices just set the `minSdkVersion` in your `build.gradle` or `AndroidManifest.xml` files.&#xA;If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the `@TargetApi` annotation specifying the local minimum SDK to apply, such as `@TargetApi(11)`, such that this check considers 11 rather than your manifest file&apos;s minimum SDK as the required API level.&#xA;"
+        errorLine1="     View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);"
+        errorLine2="     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/Godot.java"
+            line="640"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="InlinedApi"
+        severity="Warning"
+        message="Field requires API level 19 (current min is 18): `android.view.View#SYSTEM_UI_FLAG_IMMERSIVE_STICKY`"
+        category="Correctness"
+        priority="6"
+        summary="Using inlined constants on older versions"
+        explanation="This check scans through all the Android API field references in the application and flags certain constants, such as static final integers and Strings, which were introduced in later versions. These will actually be copied into the class files rather than being referenced, which means that the value is available even when running on older devices. In some cases that&apos;s fine, and in other cases it can result in a runtime crash or incorrect behavior. It depends on the context, so consider the code carefully and device whether it&apos;s safe and can be suppressed or whether the code needs tbe guarded.&#xA;&#xA;If you really want to use this API and don&apos;t need to support older devices just set the `minSdkVersion` in your `build.gradle` or `AndroidManifest.xml` files.&#xA;If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the `@TargetApi` annotation specifying the local minimum SDK to apply, such as `@TargetApi(11)`, such that this check considers 11 rather than your manifest file&apos;s minimum SDK as the required API level.&#xA;"
+        errorLine1="       View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);"
+        errorLine2="       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/Godot.java"
+            line="661"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="OldTargetApi"
+        severity="Warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details."
+        category="Correctness"
+        priority="6"
+        summary="Target SDK attribute is not targeting latest version"
+        explanation="When your application runs on a version of Android that is more recent than your `targetSdkVersion` specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the `targetSdkVersion` is less than 14, your app may get an option button in the UI.&#xA;&#xA;To fix this issue, set the `targetSdkVersion` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        url="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        urls="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        errorLine1="&lt;uses-sdk android:minSdkVersion=&quot;18&quot; android:targetSdkVersion=&quot;27&quot;/>"
+        errorLine2="                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/AndroidManifest.xml"
+            line="204"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="OldTargetApi"
+        severity="Warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details."
+        category="Correctness"
+        priority="6"
+        summary="Target SDK attribute is not targeting latest version"
+        explanation="When your application runs on a version of Android that is more recent than your `targetSdkVersion` specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the `targetSdkVersion` is less than 14, your app may get an option button in the UI.&#xA;&#xA;To fix this issue, set the `targetSdkVersion` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        url="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        urls="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        errorLine1="  targetSdkVersion 27"
+        errorLine2="  ~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/build.gradle"
+            line="44"
+            column="3"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        severity="Warning"
+        message="Attribute `resizeableActivity` is only used in API level 24 and higher (current min is 18)"
+        category="Correctness"
+        priority="6"
+        summary="Attribute unused on older versions"
+        explanation="This check finds attributes set in XML files that were introduced in a version newer than the oldest version targeted by your application (with the `minSdkVersion` attribute).&#xA;&#xA;This is not an error; the application will simply ignore the attribute. However, if the attribute is important to the appearance of functionality of your application, you should consider finding an alternative way to achieve the same result with only available attributes, and then you can optionally create a copy of the layout in a layout-vNN folder which will be used on API NN or higher where you can take advantage of the newer attribute.&#xA;&#xA;Note: This check does not only apply to attributes. For example, some tags can be unused too, such as the new `&lt;tag>` element in layouts introduced in API 21."
+        errorLine1="                  android:resizeableActivity=&quot;false&quot;>"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/AndroidManifest.xml"
+            line="20"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="LongLogTag"
+        severity="Error"
+        message="The logging tag can be at most 23 characters, was 24 (CancellableIntentService)"
+        category="Correctness"
+        priority="5"
+        summary="Too Long Log Tags"
+        explanation="Log tags are only allowed to be at most 23 tag characters long."
+        errorLine1="        Log.d(LOG_TAG, &quot;onDestroy&quot;);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/com/google/android/vending/expansion/downloader/impl/CustomIntentService.java"
+            line="68"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="LongLogTag"
+        severity="Error"
+        message="The logging tag can be at most 23 characters, was 24 (CancellableIntentService)"
+        category="Correctness"
+        priority="5"
+        summary="Too Long Log Tags"
+        explanation="Log tags are only allowed to be at most 23 tag characters long."
+        errorLine1="                Log.d(LOG_TAG, &quot;stopSelf&quot;);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/com/google/android/vending/expansion/downloader/impl/CustomIntentService.java"
+            line="106"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LongLogTag"
+        severity="Error"
+        message="The logging tag can be at most 23 characters, was 24 (CancellableIntentService)"
+        category="Correctness"
+        priority="5"
+        summary="Too Long Log Tags"
+        explanation="Log tags are only allowed to be at most 23 tag characters long."
+        errorLine1="                Log.d(LOG_TAG, &quot;afterStopSelf&quot;);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/com/google/android/vending/expansion/downloader/impl/CustomIntentService.java"
+            line="108"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LongLogTag"
+        severity="Error"
+        message="The logging tag can be at most 23 characters, was 47 (com.app11tt.android.utils.HttpRequest::get(url))"
+        category="Correctness"
+        priority="5"
+        summary="Too Long Log Tags"
+        explanation="Log tags are only allowed to be at most 23 tag characters long."
+        errorLine1="   Log.d(&quot;com.app11tt.android.utils.HttpRequest::get(url)&quot;, &quot;Url: &quot; + params.getUrl() + &quot; downloaded in &quot; + String.format(&quot;%.03f&quot;, delay / 1000.0f) + &quot; seconds&quot;);"
+        errorLine2="   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/utils/HttpRequester.java"
+            line="108"
+            column="4"/>
+    </issue>
+
+    <issue
+        id="ManifestOrder"
+        severity="Warning"
+        message="`&lt;uses-feature>` tag appears after `&lt;application>` tag"
+        category="Correctness"
+        priority="5"
+        summary="Incorrect order of elements in manifest"
+        explanation="The &lt;application> tag should appear after the elements which declare which version you need, which features you need, which libraries you need, and so on. In the past there have been subtle bugs (such as themes not getting applied correctly) when the `&lt;application>` tag appears before some of these other elements, so it&apos;s best to order your manifest in the logical dependency order."
+        errorLine1="    &lt;uses-feature android:glEsVersion=&quot;0x00030000&quot; android:required=&quot;true&quot; />"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/AndroidManifest.xml"
+            line="35"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="GradleOverrides"
+        severity="Warning"
+        message="This `minSdkVersion` value (`18`) is not used; it is always overridden by the value specified in the Gradle build script (`18`)"
+        category="Correctness"
+        priority="4"
+        summary="Value overridden by Gradle build script"
+        explanation="The value of (for example) `minSdkVersion` is only used if it is not specified in the `build.gradle` build scripts. When specified in the Gradle build scripts, the manifest value is ignored and can be misleading, so should be removed to avoid ambiguity."
+        errorLine1="&lt;uses-sdk android:minSdkVersion=&quot;18&quot; android:targetSdkVersion=&quot;27&quot;/>"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/AndroidManifest.xml"
+            line="204"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="GradleOverrides"
+        severity="Warning"
+        message="This `targetSdkVersion` value (`27`) is not used; it is always overridden by the value specified in the Gradle build script (`27`)"
+        category="Correctness"
+        priority="4"
+        summary="Value overridden by Gradle build script"
+        explanation="The value of (for example) `minSdkVersion` is only used if it is not specified in the `build.gradle` build scripts. When specified in the Gradle build scripts, the manifest value is ignored and can be misleading, so should be removed to avoid ambiguity."
+        errorLine1="&lt;uses-sdk android:minSdkVersion=&quot;18&quot; android:targetSdkVersion=&quot;27&quot;/>"
+        errorLine2="                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/AndroidManifest.xml"
+            line="204"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="Deprecated"
+        severity="Warning"
+        message="`android:singleLine` is deprecated: Use `maxLines=&quot;1&quot;` instead"
+        category="Correctness"
+        priority="2"
+        summary="Using deprecated resources"
+        explanation="Deprecated views, attributes and so on are deprecated because there is a better way to do something. Do it that new way. You&apos;ve been warned."
+        errorLine1="            android:singleLine=&quot;true&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/status_bar_ongoing_event_progress_bar.xml"
+            line="48"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="Deprecated"
+        severity="Warning"
+        message="`android:singleLine` is deprecated: Use `maxLines=&quot;1&quot;` instead"
+        category="Correctness"
+        priority="2"
+        summary="Using deprecated resources"
+        explanation="Deprecated views, attributes and so on are deprecated because there is a better way to do something. Do it that new way. You&apos;ve been warned."
+        errorLine1="            android:singleLine=&quot;true&quot;/>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/status_bar_ongoing_event_progress_bar.xml"
+            line="68"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="Deprecated"
+        severity="Warning"
+        message="`android:singleLine` is deprecated: Use `maxLines=&quot;1&quot;` instead"
+        category="Correctness"
+        priority="2"
+        summary="Using deprecated resources"
+        explanation="Deprecated views, attributes and so on are deprecated because there is a better way to do something. Do it that new way. You&apos;ve been warned."
+        errorLine1="            android:singleLine=&quot;true&quot;/>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/status_bar_ongoing_event_progress_bar.xml"
+            line="76"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="Deprecated"
+        severity="Warning"
+        message="`android:singleLine` is deprecated: Use `maxLines=&quot;1&quot;` instead"
+        category="Correctness"
+        priority="2"
+        summary="Using deprecated resources"
+        explanation="Deprecated views, attributes and so on are deprecated because there is a better way to do something. Do it that new way. You&apos;ve been warned."
+        errorLine1="                android:singleLine=&quot;true&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/status_bar_ongoing_event_progress_bar.xml"
+            line="99"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="TrulyRandom"
+        severity="Warning"
+        message="Potentially insecure random numbers on Android 4.3 and older. Read https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html for more info."
+        category="Security"
+        priority="9"
+        summary="Weak RNG"
+        explanation="Key generation, signing, encryption, and random number generation may not receive cryptographically strong values due to improper initialization of the underlying PRNG on Android 4.3 and below.&#xA;&#xA;If your application relies on cryptographically secure random number generation you should apply the workaround described in https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html .&#xA;&#xA;This lint rule is mostly informational; it does not accurately detect whether cryptographically secure RNG is required, or whether the workaround has already been applied. After reading the blog entry and updating your code if necessary, you can disable this lint issue."
+        url="https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html"
+        urls="https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/build/intermediates/classes/release/com/google/android/vending/licensing/LicenseChecker.class"/>
+    </issue>
+
+    <issue
+        id="HardwareIds"
+        severity="Warning"
+        message="Using `getString` to get device identifiers is not recommended."
+        category="Security"
+        priority="6"
+        summary="Hardware Id Usage"
+        explanation="Using these device identifiers is not recommended other than for high value fraud prevention and advanced telephony use-cases. For advertising use-cases, use `AdvertisingIdClient$Info#getId` and for analytics, use `InstanceId#getId`."
+        url="https://developer.android.com/training/articles/user-data-ids.html"
+        urls="https://developer.android.com/training/articles/user-data-ids.html"
+        errorLine1="            String deviceId = Secure.getString(mContext.getContentResolver(),"
+        errorLine2="                              ^">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/com/google/android/vending/expansion/downloader/impl/DownloaderService.java"
+            line="753"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="HardwareIds"
+        severity="Warning"
+        message="Using `getString` to get device identifiers is not recommended."
+        category="Security"
+        priority="6"
+        summary="Hardware Id Usage"
+        explanation="Using these device identifiers is not recommended other than for high value fraud prevention and advanced telephony use-cases. For advertising use-cases, use `AdvertisingIdClient$Info#getId` and for analytics, use `InstanceId#getId`."
+        url="https://developer.android.com/training/articles/user-data-ids.html"
+        urls="https://developer.android.com/training/articles/user-data-ids.html"
+        errorLine1="  io.unique_id = Secure.getString(getContentResolver(), Secure.ANDROID_ID);"
+        errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/Godot.java"
+            line="409"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="HardwareIds"
+        severity="Warning"
+        message="Using `getString` to get device identifiers is not recommended."
+        category="Security"
+        priority="6"
+        summary="Hardware Id Usage"
+        explanation="Using these device identifiers is not recommended other than for high value fraud prevention and advanced telephony use-cases. For advertising use-cases, use `AdvertisingIdClient$Info#getId` and for analytics, use `InstanceId#getId`."
+        url="https://developer.android.com/training/articles/user-data-ids.html"
+        urls="https://developer.android.com/training/articles/user-data-ids.html"
+        errorLine1="                            String android_id = Secure.getString(mContext.getContentResolver(),"
+        errorLine2="                                                ^">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/com/android/vending/licensing/LicenseChecker.java"
+            line="252"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        severity="Warning"
+        message="Invalid layout param in a `LinearLayout`: `layout_below`"
+        category="Performance"
+        priority="6"
+        summary="Obsolete layout params"
+        explanation="The given layout_param is not defined for the given layout, meaning it has no effect. This usually happens when you change the parent layout or move view code around without updating the layout params. This will cause useless attribute processing at runtime, and is misleading for others reading the layout so the parameter should be removed."
+        errorLine1="            android:layout_below=&quot;@id/statusText&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="26"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        severity="Warning"
+        message="Invalid layout param in a `RelativeLayout`: `layout_weight`"
+        category="Performance"
+        priority="6"
+        summary="Obsolete layout params"
+        explanation="The given layout_param is not defined for the given layout, meaning it has no effect. This usually happens when you change the parent layout or move view code around without updating the layout params. This will cause useless attribute processing at runtime, and is misleading for others reading the layout so the parameter should be removed."
+        errorLine1="                    android:layout_weight=&quot;1&quot; />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="62"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        severity="Warning"
+        message="Unnecessary; SDK_INT is always >= 18"
+        category="Performance"
+        priority="6"
+        summary="Obsolete SDK_INT Version Check"
+        explanation="This check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for."
+        errorLine1="        if (android.os.Build.VERSION.SDK_INT > 13)"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/com/google/android/vending/expansion/downloader/impl/CustomNotificationFactory.java"
+            line="25"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        severity="Warning"
+        message="Unnecessary; SDK_INT is never &lt; 18"
+        category="Performance"
+        priority="6"
+        summary="Obsolete SDK_INT Version Check"
+        explanation="This check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for."
+        errorLine1="  return android.os.Build.VERSION.SDK_INT &lt; 11;"
+        errorLine2="         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/GodotIO.java"
+            line="505"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        severity="Warning"
+        message="Unnecessary; SDK_INT is always >= 18"
+        category="Performance"
+        priority="6"
+        summary="Obsolete SDK_INT Version Check"
+        explanation="This check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for."
+        errorLine1="   if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {"
+        errorLine2="       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/input/InputManagerCompat.java"
+            line="133"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        severity="Warning"
+        message="Do not place Android context classes in static fields (static reference to `GodotIO` which has field `applicationContext` pointing to `Context`); this is a memory leak (and also breaks Instant Run)"
+        category="Performance"
+        priority="6"
+        summary="Static Field Leaks"
+        explanation="A static field will leak contexts."
+        errorLine1=" static public GodotIO io;"
+        errorLine2=" ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/Godot.java"
+            line="219"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        severity="Warning"
+        message="Do not place Android context classes in static fields (static reference to `Godot` which has field `mStatusText` pointing to `TextView`); this is a memory leak (and also breaks Instant Run)"
+        category="Performance"
+        priority="6"
+        summary="Static Field Leaks"
+        explanation="A static field will leak contexts."
+        errorLine1=" private static Godot _self;"
+        errorLine2=" ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/Godot.java"
+            line="338"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        severity="Warning"
+        message="Do not place Android context classes in static fields (static reference to `GodotIO` which has field `applicationContext` pointing to `Context`); this is a memory leak (and also breaks Instant Run)"
+        category="Performance"
+        priority="6"
+        summary="Static Field Leaks"
+        explanation="A static field will leak contexts."
+        errorLine1=" public static GodotIO io;"
+        errorLine2=" ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/GodotLib.java"
+            line="37"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        severity="Warning"
+        message="Do not place Android context classes in static fields; this is a memory leak (and also breaks Instant Run)"
+        category="Performance"
+        priority="6"
+        summary="Static Field Leaks"
+        explanation="A static field will leak contexts."
+        errorLine1=" private static Context ctx;"
+        errorLine2=" ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/GodotView.java"
+            line="78"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        severity="Warning"
+        message="Do not place Android context classes in static fields (static reference to `GodotIO` which has field `applicationContext` pointing to `Context`); this is a memory leak (and also breaks Instant Run)"
+        category="Performance"
+        priority="6"
+        summary="Static Field Leaks"
+        explanation="A static field will leak contexts."
+        errorLine1=" private static GodotIO io;"
+        errorLine2=" ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/GodotView.java"
+            line="80"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="HandlerLeak"
+        severity="Warning"
+        message="This Handler class should be static or leaks might occur (anonymous android.os.Handler)"
+        category="Performance"
+        priority="4"
+        summary="Handler reference leaks"
+        explanation="Since this Handler is declared as an inner class, it may prevent the outer class from being garbage collected. If the Handler is using a Looper or MessageQueue for a thread other than the main thread, then there is no issue. If the Handler is using the Looper or MessageQueue of the main thread, you need to fix your Handler declaration, as follows: Declare the Handler as a static class; In the outer class, instantiate a WeakReference to the outer class and pass this object to your Handler when you instantiate the Handler; Make all references to members of the outer class using the WeakReference object."
+        errorLine1="        final Messenger mMessenger = new Messenger(new Handler() {"
+        errorLine2="                                                       ~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/com/google/android/vending/expansion/downloader/DownloaderClientMarshaller.java"
+            line="121"
+            column="56"/>
+    </issue>
+
+    <issue
+        id="HandlerLeak"
+        severity="Warning"
+        message="This Handler class should be static or leaks might occur (anonymous android.os.Handler)"
+        category="Performance"
+        priority="4"
+        summary="Handler reference leaks"
+        explanation="Since this Handler is declared as an inner class, it may prevent the outer class from being garbage collected. If the Handler is using a Looper or MessageQueue for a thread other than the main thread, then there is no issue. If the Handler is using the Looper or MessageQueue of the main thread, you need to fix your Handler declaration, as follows: Declare the Handler as a static class; In the outer class, instantiate a WeakReference to the outer class and pass this object to your Handler when you instantiate the Handler; Make all references to members of the outer class using the WeakReference object."
+        errorLine1="        final Messenger mMessenger = new Messenger(new Handler() {"
+        errorLine2="                                                       ~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/com/google/android/vending/expansion/downloader/DownloaderServiceMarshaller.java"
+            line="111"
+            column="56"/>
+    </issue>
+
+    <issue
+        id="HandlerLeak"
+        severity="Warning"
+        message="This Handler class should be static or leaks might occur (anonymous android.os.Handler)"
+        category="Performance"
+        priority="4"
+        summary="Handler reference leaks"
+        explanation="Since this Handler is declared as an inner class, it may prevent the outer class from being garbage collected. If the Handler is using a Looper or MessageQueue for a thread other than the main thread, then there is no issue. If the Handler is using the Looper or MessageQueue of the main thread, you need to fix your Handler declaration, as follows: Declare the Handler as a static class; In the outer class, instantiate a WeakReference to the outer class and pass this object to your Handler when you instantiate the Handler; Make all references to members of the outer class using the WeakReference object."
+        errorLine1="  sHandler = new Handler() {"
+        errorLine2="                 ~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/input/GodotEditText.java"
+            line="79"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="UseSparseArrays"
+        severity="Warning"
+        message="Use `new SparseArray&lt;AssetData>(...)` instead for better performance"
+        category="Performance"
+        priority="4"
+        summary="HashMap can be replaced with SparseArray"
+        explanation="For maps where the keys are of type integer, it&apos;s typically more efficient to use the Android `SparseArray` API. This check identifies scenarios where you might want to consider using `SparseArray` instead of `HashMap` for better performance.&#xA;&#xA;This is *particularly* useful when the value types are primitives like ints, where you can use `SparseIntArray` and avoid auto-boxing the values from `int` to `Integer`.&#xA;&#xA;If you need to construct a `HashMap` because you need to call an API outside of your control which requires a `Map`, you can suppress this warning using for example the `@SuppressLint` annotation."
+        errorLine1="  streams = new HashMap&lt;Integer, AssetData>();"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/GodotIO.java"
+            line="354"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UseSparseArrays"
+        severity="Warning"
+        message="Use `new SparseArray&lt;AssetDir>(...)` instead for better performance"
+        category="Performance"
+        priority="4"
+        summary="HashMap can be replaced with SparseArray"
+        explanation="For maps where the keys are of type integer, it&apos;s typically more efficient to use the Android `SparseArray` API. This check identifies scenarios where you might want to consider using `SparseArray` instead of `HashMap` for better performance.&#xA;&#xA;This is *particularly* useful when the value types are primitives like ints, where you can use `SparseIntArray` and avoid auto-boxing the values from `int` to `Integer`.&#xA;&#xA;If you need to construct a `HashMap` because you need to call an API outside of your control which requires a `Map`, you can suppress this warning using for example the `@SuppressLint` annotation."
+        errorLine1="  dirs = new HashMap&lt;Integer, AssetDir>();"
+        errorLine2="         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/GodotIO.java"
+            line="355"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="InefficientWeight"
+        severity="Warning"
+        message="Use a `layout_height` of `0dp` instead of `wrap_content` for better performance"
+        category="Performance"
+        priority="3"
+        summary="Inefficient layout weight"
+        explanation="When only a single widget in a LinearLayout defines a weight, it is more efficient to assign a width/height of `0dp` to it since it will absorb all the remaining space anyway. With a declared width/height of `0dp` it does not have to measure its own size first."
+        errorLine1="                android:layout_height=&quot;wrap_content&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="31"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.notify_panel_notification_icon_bg` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/drawable-hdpi/notify_panel_notification_icon_bg.png"/>
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/drawable-mdpi/notify_panel_notification_icon_bg.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.layout.status_bar_ongoing_event_progress_bar` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;LinearLayout android:layout_width=&quot;match_parent&quot;"
+        errorLine2="^"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/status_bar_ongoing_event_progress_bar.xml"
+            line="20"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.text_verifying_download` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;text_verifying_download&quot;>Verifying Download&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values/strings.xml"
+            line="8"
+            column="13"/>
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-fa/strings.xml"
+            line="8"
+            column="13"/>
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-ko/strings.xml"
+            line="8"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.text_validation_complete` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;text_validation_complete&quot;>XAPK File Validation Complete.  Select OK to exit.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values/strings.xml"
+            line="9"
+            column="13"/>
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-fa/strings.xml"
+            line="9"
+            column="13"/>
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-ko/strings.xml"
+            line="9"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.text_validation_failed` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;text_validation_failed&quot;>XAPK File Validation Failed.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values/strings.xml"
+            line="10"
+            column="13"/>
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-fa/strings.xml"
+            line="10"
+            column="13"/>
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-ko/strings.xml"
+            line="10"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.text_button_cancel_verify` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;text_button_cancel_verify&quot;>Cancel Verification&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values/strings.xml"
+            line="14"
+            column="13"/>
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-fa/strings.xml"
+            line="14"
+            column="13"/>
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-ko/strings.xml"
+            line="14"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.notification_download_complete` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;notification_download_complete&quot;>Download complete&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values/strings.xml"
+            line="23"
+            column="13"/>
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-ko/strings.xml"
+            line="23"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.notification_download_failed` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;notification_download_failed&quot;>Download unsuccessful&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values/strings.xml"
+            line="30"
+            column="13"/>
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-ko/strings.xml"
+            line="30"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.state_failed` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;state_failed&quot;>Download failed&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values/strings.xml"
+            line="50"
+            column="13"/>
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-ko/strings.xml"
+            line="50"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.style.ButtonBackground` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;style name=&quot;ButtonBackground&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values/styles.xml"
+            line="21"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        severity="Warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        category="Usability:Typography"
+        priority="5"
+        summary="Ellipsis string can be replaced with ellipsis character"
+        explanation="You can replace the string &quot;...&quot; with a dedicated ellipsis character, ellipsis character (…, &amp;#8230;). This can help make the text more readable."
+        url="http://en.wikipedia.org/wiki/Ellipsis"
+        urls="http://en.wikipedia.org/wiki/Ellipsis"
+        errorLine1="    &lt;string name=&quot;state_unknown&quot;>시작중...&lt;/string>"
+        errorLine2="                                 ^"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/values-ko/strings.xml"
+            line="33"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/icon.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/drawable/icon.png"/>
+    </issue>
+
+    <issue
+        id="IconMissingDensityFolder"
+        severity="Warning"
+        message="Missing density variation folders in `res`: drawable-xhdpi, drawable-xxhdpi"
+        category="Usability:Icons"
+        priority="3"
+        summary="Missing density folder"
+        explanation="Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra-high, extra-extra-high). This lint check identifies folders which are missing, such as `drawable-hdpi`.&#xA;&#xA;Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html"
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res"/>
+    </issue>
+
+    <issue
+        id="ButtonOrder"
+        severity="Warning"
+        message="Cancel button should be on the left (was &quot;&quot;Pause Download&quot; | Cancel&quot;, should be &quot;Cancel | &quot;Pause Download&quot;&quot;)"
+        category="Usability"
+        priority="8"
+        summary="Button order"
+        explanation="According to the Android Design Guide,&#xA;&#xA;&quot;Action buttons are typically Cancel and/or OK, with OK indicating the preferred or most likely action. However, if the options consist of specific actions such as Close or Wait rather than a confirmation or cancellation of the action described in the content, then all the buttons should be active verbs. As a rule, the dismissive action of a dialog is always on the left whereas the affirmative actions are on the right.&quot;&#xA;&#xA;This check looks for button bars and buttons which look like cancel buttons, and makes sure that these are on the left."
+        url="http://developer.android.com/design/building-blocks/dialogs.html"
+        urls="http://developer.android.com/design/building-blocks/dialogs.html"
+        errorLine1="                &lt;Button"
+        errorLine2="                ^">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="102"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        severity="Warning"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        category="Usability"
+        priority="5"
+        summary="Button should be borderless"
+        explanation="Button bars typically use a borderless style for the buttons. Set the `style=&quot;?android:attr/buttonBarButtonStyle&quot;` attribute on each of the buttons, and set `style=&quot;?android:attr/buttonBarStyle&quot;` on the parent layout"
+        url="http://developer.android.com/design/building-blocks/buttons.html"
+        urls="http://developer.android.com/design/building-blocks/buttons.html"
+        errorLine1="                &lt;Button"
+        errorLine2="                ^">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="88"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        severity="Warning"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        category="Usability"
+        priority="5"
+        summary="Button should be borderless"
+        explanation="Button bars typically use a borderless style for the buttons. Set the `style=&quot;?android:attr/buttonBarButtonStyle&quot;` attribute on each of the buttons, and set `style=&quot;?android:attr/buttonBarStyle&quot;` on the parent layout"
+        url="http://developer.android.com/design/building-blocks/buttons.html"
+        urls="http://developer.android.com/design/building-blocks/buttons.html"
+        errorLine1="                &lt;Button"
+        errorLine2="                ^">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="102"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        severity="Warning"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        category="Usability"
+        priority="5"
+        summary="Button should be borderless"
+        explanation="Button bars typically use a borderless style for the buttons. Set the `style=&quot;?android:attr/buttonBarButtonStyle&quot;` attribute on each of the buttons, and set `style=&quot;?android:attr/buttonBarStyle&quot;` on the parent layout"
+        url="http://developer.android.com/design/building-blocks/buttons.html"
+        urls="http://developer.android.com/design/building-blocks/buttons.html"
+        errorLine1="            &lt;Button"
+        errorLine2="            ^">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="148"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        severity="Warning"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        category="Usability"
+        priority="5"
+        summary="Button should be borderless"
+        explanation="Button bars typically use a borderless style for the buttons. Set the `style=&quot;?android:attr/buttonBarButtonStyle&quot;` attribute on each of the buttons, and set `style=&quot;?android:attr/buttonBarStyle&quot;` on the parent layout"
+        url="http://developer.android.com/design/building-blocks/buttons.html"
+        urls="http://developer.android.com/design/building-blocks/buttons.html"
+        errorLine1="            &lt;Button"
+        errorLine2="            ^">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="156"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GoogleAppIndexingWarning"
+        severity="Warning"
+        message="App is not indexable by Google Search; consider adding at least one Activity with an ACTION-VIEW intent filter. See issue explanation for more details."
+        category="Usability"
+        priority="5"
+        summary="Missing support for Firebase App Indexing"
+        explanation="Adds URLs to get your app into the Google index, to get installs and traffic to your app from Google Search."
+        url="https://g.co/AppIndexing/AndroidStudio"
+        urls="https://g.co/AppIndexing/AndroidStudio"
+        errorLine1="    &lt;application android:label=&quot;@string/godot_project_name_string&quot; android:icon=&quot;@drawable/icon&quot; android:allowBackup=&quot;false&quot;  >"
+        errorLine2="    ^"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/AndroidManifest.xml"
+            line="13"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ViewConstructor"
+        severity="Warning"
+        message="Custom view `GodotView` is missing constructor used by tools: `(Context)` or `(Context,AttributeSet)` or `(Context,AttributeSet,int)`"
+        category="Usability"
+        priority="3"
+        summary="Missing View constructors for XML inflation"
+        explanation="Some layout tools (such as the Android layout editor) need to find a constructor with one of the following signatures:&#xA;* `View(Context context)`&#xA;* `View(Context context, AttributeSet attrs)`&#xA;* `View(Context context, AttributeSet attrs, int defStyle)`&#xA;&#xA;If your custom view needs to perform initialization which does not apply when used in a layout editor, you can surround the given code with a check to see if `View#isInEditMode()` is false, since that method will return `false` at runtime but true within a user interface editor."
+        errorLine1="public class GodotView extends GLSurfaceView implements InputDeviceListener {"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/GodotView.java"
+            line="74"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="[Accessibility] Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="        &lt;ImageView"
+        errorLine2="        ^"
+        quickfix="studio">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/status_bar_ongoing_event_progress_bar.xml"
+            line="31"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="http://developer.android.com/guide/topics/resources/localization.html"
+        urls="http://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="  mProgressPercent.setText(Long.toString(progress.mOverallProgress * 100 /"
+        errorLine2="                           ^">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/Godot.java"
+            line="994"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="Number formatting does not take into account locale settings. Consider using `String.format` instead."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="http://developer.android.com/guide/topics/resources/localization.html"
+        urls="http://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="  mProgressPercent.setText(Long.toString(progress.mOverallProgress * 100 /"
+        errorLine2="                           ^">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/src/org/godotengine/godot/Godot.java"
+            line="994"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;0MB / 0MB&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                    android:text=&quot;0MB / 0MB&quot; >"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="41"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;0%&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                    android:text=&quot;0%&quot; />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="50"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="RelativeOverlap"
+        severity="Warning"
+        message="`@id/time_remaining` can overlap `@id/title` if @id/title, @id/time_remaining grow due to localized text expansion"
+        category="Internationalization"
+        priority="3"
+        summary="Overlapping items in RelativeLayout"
+        explanation="If relative layout has text or button items aligned to left and right sides they can overlap each other due to localized text expansion unless they have mutual constraints like `toEndOf`/`toStartOf`."
+        errorLine1="        &lt;TextView"
+        errorLine2="        ^">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/status_bar_ongoing_event_progress_bar.xml"
+            line="70"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        severity="Warning"
+        message="When you define `paddingRight` you should probably also define `paddingLeft` for right-to-left symmetry"
+        category="Internationalization:Bidirectional Text"
+        priority="6"
+        summary="Padding and margin symmetry"
+        explanation="If you specify padding or margin on the left side of a layout, you should probably also specify padding on the right side (and vice versa) for right-to-left layout symmetry."
+        errorLine1="        android:paddingRight=&quot;8dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/status_bar_ongoing_event_progress_bar.xml"
+            line="59"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        severity="Warning"
+        message="When you define `paddingRight` you should probably also define `paddingLeft` for right-to-left symmetry"
+        category="Internationalization:Bidirectional Text"
+        priority="6"
+        summary="Padding and margin symmetry"
+        explanation="If you specify padding or margin on the left side of a layout, you should probably also specify padding on the right side (and vice versa) for right-to-left layout symmetry."
+        errorLine1="                android:paddingRight=&quot;25dp&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/status_bar_ongoing_event_progress_bar.xml"
+            line="90"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        severity="Warning"
+        message="When you define `paddingRight` you should probably also define `paddingLeft` for right-to-left symmetry"
+        category="Internationalization:Bidirectional Text"
+        priority="6"
+        summary="Padding and margin symmetry"
+        explanation="If you specify padding or margin on the left side of a layout, you should probably also specify padding on the right side (and vice versa) for right-to-left layout symmetry."
+        errorLine1="                android:paddingRight=&quot;25dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/status_bar_ongoing_event_progress_bar.xml"
+            line="98"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;5dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:layout_marginLeft=&quot;5dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="18"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="                    android:layout_alignParentLeft=&quot;true&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="39"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;5dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="                    android:layout_marginLeft=&quot;5dp&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="40"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:layout_alignRight` with `android:layout_alignEnd=&quot;@+id/progressBar&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="                    android:layout_alignRight=&quot;@+id/progressBar&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="49"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="                    android:layout_alignParentLeft=&quot;true&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="69"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;5dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="                    android:layout_marginLeft=&quot;5dp&quot; />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="71"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:layout_alignRight` with `android:layout_alignEnd=&quot;@+id/progressBar&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="                    android:layout_alignRight=&quot;@+id/progressBar&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="78"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;10dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="                    android:layout_marginLeft=&quot;10dp&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="94"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;5dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="                    android:layout_marginRight=&quot;5dp&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/downloading_expansion.xml"
+            line="95"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:layout_alignParentLeft=&quot;true&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/status_bar_ongoing_event_progress_bar.xml"
+            line="36"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:layout_alignParentLeft=&quot;true&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/status_bar_ongoing_event_progress_bar.xml"
+            line="45"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:paddingRight` with `android:paddingEnd=&quot;8dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="        android:paddingRight=&quot;8dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/status_bar_ongoing_event_progress_bar.xml"
+            line="59"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:layout_alignParentLeft=&quot;true&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/status_bar_ongoing_event_progress_bar.xml"
+            line="67"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:layout_alignParentRight=&quot;true&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/status_bar_ongoing_event_progress_bar.xml"
+            line="75"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:paddingRight` with `android:paddingEnd=&quot;25dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="                android:paddingRight=&quot;25dp&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/status_bar_ongoing_event_progress_bar.xml"
+            line="90"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:paddingRight` with `android:paddingEnd=&quot;25dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="                android:paddingRight=&quot;25dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/paritosh97/Desktop/Godot/godot/platform/android/java/res/layout/status_bar_ongoing_event_progress_bar.xml"
+            line="98"
+            column="17"/>
+    </issue>
+
+</issues>
